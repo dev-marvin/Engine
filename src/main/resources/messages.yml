@@ -18,3 +18,8 @@ enchant-command-usage: '&cUtilize /encantar <encantamento> <level>.'
 enchant-command-error: '&cVocê precisa estar segurando um item válido.'
 enchant-command-invalid: '&cNão foi possível encontrar o encantamento chamado {enchant}.'
 enchant-command-message: '&aYay! O encantamento foi adicionado ao item com sucesso.'
+
+# BACK - SYSTEM
+back-command-error: '&cVocê não possui nenhum local para retornar.'
+back-listener-message: '&eA localização de sua morte vai ser salva por 5 minutos.\n&eCaso queira retornar, utilize /voltar.'
+back-command-message: '&aYay! Você foi levado de volta ao seu último local.'

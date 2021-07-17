@@ -1,7 +1,12 @@
 package me.tuskdev.engine;
 
+import me.saiintbrisson.bukkit.command.BukkitFrame;
+import me.tuskdev.engine.cache.BackSystemCache;
+import me.tuskdev.engine.command.*;
+import me.tuskdev.engine.listener.BackSystemListener;
 import me.tuskdev.engine.util.ConfigFile;
 import me.tuskdev.engine.util.MessageUtil;
+import me.tuskdev.engine.util.PluginUtil;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public class EnginePlugin extends JavaPlugin {
@@ -17,6 +22,22 @@ public class EnginePlugin extends JavaPlugin {
 
     @Override
     public void onEnable() {
+        BackSystemCache backSystemCache = new BackSystemCache();
+
+        BukkitFrame bukkitFrame = new BukkitFrame(this);
+        bukkitFrame.registerCommands(
+                new AlertCommand(),
+                new BackCommand(backSystemCache),
+                new ClearChatCommand(),
+                new ClearCommand(),
+                new CraftCommand(),
+                new EnchantCommand()
+        );
+
+        PluginUtil.registerListener(this,
+                new BackSystemListener(backSystemCache)
+        );
+
         MessageUtil.load(new ConfigFile(this, "messages.yml").getFileConfiguration());
     }
 
