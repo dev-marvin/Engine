@@ -1,3 +1,6 @@
+invalid-player: '&cNão foi encontrado nenhum usuário chamado {player}.'
+invalid-number: '&cO número inserido é inválido.'
+
 # ALERT - COMMAND
 use-alert-command: '&cUtilize /alerta <mensagem>.'
 alert-command-message: '\n  &e[Alerta] &f{message}.'
@@ -5,4 +8,13 @@ alert-command-message: '\n  &e[Alerta] &f{message}.'
 # CLEAR CHAT - COMMAND
 clearchat-command-message: '&aVocê limpou o chat com sucesso.'
 
-# FLY - COMMAND
+# CLEAR - COMMAND
+clear-command-usage: '&cUtilize /clear <usuário>.'
+clear-command-player-message: '&eO inventário do usuário {player} foi limpo com sucesso.'
+clear-command-message: '&aSeu inventário foi limpo com sucesso.'
+
+# ENCHANT - COMMAND
+enchant-command-usage: '&cUtilize /encantar <encantamento> <level>.'
+enchant-command-error: '&cVocê precisa estar segurando um item válido.'
+enchant-command-invalid: '&cNão foi possível encontrar o encantamento chamado {enchant}.'
+enchant-command-message: '&aYay! O encantamento foi adicionado ao item com sucesso.'
