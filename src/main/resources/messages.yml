@@ -1,0 +1,8 @@
+# ALERT - COMMAND
+use-alert-command: '&cUtilize /alerta <mensagem>.'
+alert-command-message: '\n  &e[Alerta] &f{message}.'
+
+# CLEAR CHAT - COMMAND
+clearchat-command-message: '&aVocê limpou o chat com sucesso.'
+
+# FLY - COMMAND
