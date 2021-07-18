@@ -19,6 +19,28 @@ enchant-command-error: '&cVocê precisa estar segurando um item válido.'
 enchant-command-invalid: '&cNão foi possível encontrar o encantamento chamado {enchant}.'
 enchant-command-message: '&aYay! O encantamento foi adicionado ao item com sucesso.'
 
+# TPA - COMMAND
+tpa-command-contains: '&cVocê já possui um pedido de teletransporte pendente.'
+tpa-command-error: '&cVocê não pode enviar uma solicitação de teletransporte a si mesmo.'
+tpa-command-message: '&aO pedido de teletransporte foi enviado com sucesso.'
+tpa-command-player: '&eVocê possui um novo pedido de teletransporte enviado por {player}.'
+
+# TPA ACCEPT - COMMAND
+tpaaccept-command-error: '&cVocê não possui um pedido de teletransporte pedente desse usuário.'
+tpaaccept-command-message: '&aVocê aceitou o pedido de teletransporte de {player} com sucesso.'
+tpaaccept-command-player: '&eSeu pedido de teletransporte foi aceito.'
+
+# TPA CANCEL - COMMAND
+tpacancel-command-error: '&cVocê não enviou um pedido de teletransporte para esse usuário.'
+tpacancel-command-message: '&cVocê cancelou o pedido de teletransporte enviado para {player}.'
+tpacancel-command-player: '&c{player} cancelou o pedido de teletransporte.'
+
+# TPA DENY - COMMAND
+tpadeny-command-error: '&cVocê não possui um pedido de teletransporte pedente desse usuário.'
+tpadeny-command-message: '&aVocê recusou o pedido de teletransporte de {player}.'
+tpadeny-command-player: '&cSeu pedido de teletransporte foi recusado.'
+
+
 # BACK - SYSTEM
 back-command-error: '&cVocê não possui nenhum local para retornar.'
 back-listener-message: '&eA localização de sua morte vai ser salva por 5 minutos.\n&eCaso queira retornar, utilize /voltar.'

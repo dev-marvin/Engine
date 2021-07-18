@@ -31,7 +31,8 @@ public class EnginePlugin extends JavaPlugin {
                 new ClearChatCommand(),
                 new ClearCommand(),
                 new CraftCommand(),
-                new EnchantCommand()
+                new EnchantCommand(),
+                new TpaCommand()
         );
 
         PluginUtil.registerListener(this,
